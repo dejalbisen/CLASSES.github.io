@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>UNIQUE CLASSES</title>
+	<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+.containers{
+    background:linear-gradient(45deg, rgb(140, 183, 196), rgb(89, 139, 180));
+    padding:15px 9%;
+    padding-bottom: 100px;
+}
+
+.containers .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color:#fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+
+.containers .box-containers{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+}
+
+.containers .box-containers .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding:30px 20px;
+}
+
+.containers .box-containers .box img{
+    height: 200px;
+}
+
+.containers .box-containers .box h3{
+    color:#444;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+.containers .box-containers .box p{
+    color:#777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.containers .box-containers .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background:#333;
+    color:#fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.containers .box-containers .box .btn:hover{
+    letter-spacing: 1px;
+}
+
+.containers .box-containers .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+@media (max-width:768px){
+    .container{
+        padding:20px;
+    }
+}
+    
+    .carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.carousel-caption {
+	bottom: 220px;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	font-family: merienda;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+	font-family: poppins;
+}
+.carousel-caption a {
+	text-transform: uppercase;
+	background: #262626;
+	padding: 10px 30px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 15px;
+}
+.navbar-nav a {
+	font-family: poppins;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.navbar-light .navbar-brand {
+	color: #fff;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+}
+.navbar-nav {
+	text-align: center;
+}
+.nav-link {
+	padding: .2rem 1rem;
+}
+.nav-link.active, .nav-link:focus {
+	color: #fff;
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #fff;
+}
+.w-100 {
+	height: 100vh;
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap'); */
+
+:root{
+   --blue:#2463d8;
+   --white:#2c77be;
+   --light-white:#271c0e;
+   --black:#e1e7eeaf;
+   --light-bg:#c2d9e4;
+}
+
+*{
+   font-family: sans-serif;
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   outline: none;
+   border:none;
+   text-decoration: none;
+   transition: .3s linear;
+   text-transform: capitalize;
+}
+
+*::selection{
+   background-color: var(--white);
+   color:var(--black);
+}
+
+html{
+   font-size: 63.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 7rem;
+}
+
+::-webkit-scrollbar{
+   height: .5rem;
+   width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+   background-color: var(--blue);
+   border-radius: 5rem;
+}
+
+body{
+   background-color: var(--black);
+}
+
+section{
+   max-width: 1200px;
+   margin:0 auto;
+   padding:2rem;
+}
+
+
+.btn{
+   display: inline-block;
+   margin-top: 1rem;
+   border-radius: 5rem;
+   background-color: var(--light-bg);
+   cursor: pointer;
+   color:var(--white);
+   font-size: 1.8rem;
+   padding:1rem 3rem;
+}
+
+.btn:hover{
+   background-color: var(--white);
+   color:var(--black);
+}
+
+.heading{
+   margin-bottom: 2.5rem;
+   text-align: center;
+   font-size: 4rem;
+   color:var(--white);
+   text-transform: uppercase;
+}
+
+.myheading span{
+   color:var(--blue);
+   text-transform: uppercase;
+}
+
+.myheader{
+   position: fixed;
+   top:0; left:0; right:0;
+   z-index: 1000;
+   background-color: var(--light-bg);
+}
+
+.myheader .flexbox{
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.myheader .flexbox .logos{
+   font-size: 2.5rem;
+   color:var(--white);
+}
+
+.myheader .flexbox .navbar a{
+   margin-left: 2.1rem;
+   color:var(--light-white);
+   font-size: 2.1rem;
+}
+
+.myheader .flexbox .navbar a:hover{
+   color:var(--blue);
+}
+
+
+#menu-btns{
+   cursor: pointer;
+   color:var(--white);
+   font-size: 2.5rem;
+   display: none;
+}
+
+.home{
+   margin-top: 6rem;
+}
+
+.container .home .rows{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap-reverse;
+   gap:1.5rem;
+}
+
+.home .rows .content{
+   flex:1 1 40rem;
+   text-align: center;
+}
+
+.home .rows .image{
+   flex:1 1 40rem;
+}
+
+.home .rows .image img{
+   width: 100%;
+}
+
+.home .rows .content h3{
+   margin-bottom: 1rem;
+   font-size: 10rem;
+   color:var(--white);
+   line-height: 1;
+}
+
+.home .rows .content h3 span{
+   color:var(--blue);
+}
+
+.home .rows .content h4 {
+    margin: 1.1rem;
+    font-size: large;
+    color: white;
+    line-height: normal;
+}
+
+.counter .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+   gap:1.5rem;
+   align-items: flex-start;
+}
+
+.counter .box-container .box{
+   background-color: var(--light-bg);
+   border-radius: .5rem;
+   padding:2rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap:2.5rem;
+}
+
+.counter .box-container .box i{
+   font-size: 5rem;
+   color:var(--blue);
+}
+
+.counter .box-container .box .content h3{
+   font-size: 2rem;
+   color:var(--white);
+   margin-bottom: .5rem;
+}
+
+.counter .box-container .box .content p{
+   font-size: 1.6rem;
+   color:var(--light-white);
+} 
+
+.about .column{
+   display: flex;
+   align-items: center;
+   gap: 1.5rem;
+   flex-wrap: wrap;
+}
+
+.about .column .image{
+   flex:1 1 40rem;
+}
+
+.about .column .image img{
+   width: 100%;
+}
+
+.about .column .content{
+   text-align: center;
+   flex:1 1 40rem;
+}
+
+.about .column .content h3{
+   font-size: 3rem;
+   color:var(--white);
+}
+
+.about .column .content p{
+   padding:1rem 0;
+   line-height: 2;
+   font-size: 1.6rem;
+   color:var(--light-white);
+}
+
+.courses .slides{
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+    text-align: center; 
+    padding:2rem;
+    margin-bottom: 4rem;
+    user-select: none;
+ }
+ 
+ .courses .slides img{
+    height: 25rem;
+    width: 100%;
+ }
+ 
+ .courses .slides h3{
+    margin:1.5rem 0;
+    font-size: 2rem;
+    color:var(--white);
+ }
+ 
+ .courses .slides p{
+    line-height: 2;
+    font-size: 1.7rem;
+    color:var(--light-white);
+ }
+ 
+ .swiper-pagination-bullet{
+    background-color: var(--white);
+ }
+  
+ .swiper-pagination-bullet-active{
+    background-color: var(--blue);
+ }
+ 
+ 
+
+
+.contact .row{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap:1.5rem;
+}
+
+.contact .row .image{
+   flex: 1 1 40rem;
+}
+
+.contact .row .image img{
+   width: 100%;
+}
+
+.contact .row form{
+   flex:1 1 40rem;
+}
+
+.contact .row form .box{
+   width: 100%;
+   margin-top: 1rem;
+   margin-bottom: 2rem;
+   border-radius: .5rem;
+   background-color: var(--light-bg);
+   font-size: 1.8rem;
+   color:var(--white);
+   padding:1.4rem;
+   text-transform: none;
+}
+
+.contact .row form span{
+   font-size: 1.6rem;
+   color:var(--light-white);
+}
+
+form a{
+   /* width: 100%; */
+   /* margin-top: 1rem; */
+   /* flex:1 1 40rem; */
+   /* margin-bottom: 2rem; */
+   /* border-radius: .5rem; */
+   /* background-color: var(--light-bg); */
+/* background-color: yellow; */
+   font-size: 2.8rem;
+   color:var(--white);
+   /* padding:1.4rem; */
+   text-transform: 1s;
+}
+
+
+.footer{
+   background-color: var(--light-bg);
+   text-align: center;
+   
+}
+
+.footer .fb a{
+   margin:0 .3rem;
+   height: 4.5rem;
+   width: 4.5rem;
+   line-height: 4.5rem;
+   border-radius: 50%;
+   font-size: 2rem;
+   color:var(--white);
+   background-color: var(--black);;
+}
+
+.footer .fb a:hover{
+   background-color: var(--blue);
+}
+
+.footer .credit{
+   margin-top: 2.5rem;
+   padding:1.5rem;
+   padding-top: 2.5rem;
+   border-top: .1rem solid var(--light-white);
+   font-size: 2rem;
+   color:var(--light-white);
+}
+
+.footer .credit span{
+   color:var(--blue);
+}
+
+
+
+/* media queries  */
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+
+   .home .row .content h3{
+      font-size: 8rem;
+   }
+
+}
+
+@media (max-width:768px){
+
+   #menu-btn{
+      display: inline-block;
+   }
+
+   #menu-btn.fa-times{
+      transform: rotate(180deg);
+   }
+
+   .header .flex .navbar{
+      position: absolute;
+      top:99%; left:0; right:0;
+      border-top: .1rem solid var(--light-white);
+      border-bottom: .1rem solid var(--light-white);
+      background-color: var(--light-bg);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+   }
+
+   .header .flex .navbar.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   }
+   
+   .header .flex .navbar a{
+      display: block;
+      margin:2rem;
+   }
+
+   .home .row .content h3{
+      font-size: 6rem;
+   }
+
+}
+.contact .contact-form .form-item{
+    margin-bottom: 30px;
+}
+.contact .contact-form .form-item .form-control{
+    width: 100%;
+    height: 50px;
+    border-radius: 23px;
+    background: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    padding:10px 25px ;
+    font-size: 16px;
+    color: var(--text-black-700);
+    transition: all 0.3s ease;
+}
+.contact .contact-form .form-item .form-control:focus{
+    box-sizing: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+.contact .contact-form .form-item textarea.form-control{
+    height: 140px;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+	.navbar-nav.ml-auto {
+		background: rgba(0, 0, 0, 0.5);
+	}
+	.navbar-nav a {
+		font-size: 14px;
+		font-weight: normal;
+	}
+}
+@media (max-width:450px){
+
+html{
+   font-size: 50%;
+}
+
+.home .row .content h3{
+   font-size: 5rem;
+}
+
+.heading{
+ font-size: 3rem;
+}
+
+}
+
+</style>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#">Unique class center</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Classes</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
+		<ol class="carousel-indicators">
+			<li class="active" data-slide-to="0" data-target="#carouselExampleIndicators"></li>
+			<li data-slide-to="1" data-target="#carouselExampleIndicators"></li>
+			<li data-slide-to="2" data-target="#carouselExampleIndicators"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img alt="First slide" class="d-block w-100" src="111.jpg">
+				<div class="carousel-caption d-none d-md-block">
+					<h5 class="animated bounceInRight" style="animation-delay: 1s">Unique classes</h5>
+					<p class="animated bounceInLeft" style="animation-delay: 2s">Unique Classes, Best Coaching Classes And Home Tutors Service Provider In Bhopal Narayan Nagar Location..</p>
+					<p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">Contact us</a></p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img alt="Second slide" class="d-block w-100" src="333.jpg">
+				<div class="carousel-caption d-none d-md-block">
+					<h5 class="animated slideInDown" style="animation-delay: 1s">UNIQUE CLASSES</h5>
+					<p class="animated fadeInUp" style="animation-delay: 2s">Email- uniquecoaching@gmail.com || Phone no- +91363743473 </p>
+					<p class="animated zoomIn" style="animation-delay: 3s"><a href="#">Contact us</a></p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img alt="Third slide" class="d-block w-100" src="222.jpg">
+				<div class="carousel-caption d-none d-md-block">
+					<h5 class="animated zoomIn" style="animation-delay: 1s">UNIQUE CLASSES</h5>
+					<p class="animated fadeInLeft" style="animation-delay: 2s">This is for students.</p>
+					<p class="animated zoomIn" style="animation-delay: 3s"><a href="#">Contact</a></p>
+				</div>
+			</div>
+		</div><a class="carousel-control-prev" data-slide="prev" href="#carouselExampleIndicators" role="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" data-slide="next" href="#carouselExampleIndicators" role="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+	</div>
+
+    <section class="about" id="about">
+
+        <div class="column">
+     
+           <div class="image">
+              <img src="class-1.jpg" alt="">
+           </div>
+     
+           <div class="content">
+              
+              <h2>Welcome to Unique tution classes</h2>
+              <br>
+              <h3>Home Tutors Service or CBSE, ICSE or MP Board.</h3>
+              <p>Unique classes,  Best Coaching Classes and Home Tutors Service Provider in Bhopal Narayan nagar Location.India's No 1 Coaching | english Classes| Home Tutors Service or CBSE, ICSE or MP Board Coaching Classes in Bhopal Location, We have best faculty team for Coaching and Education Institute make a best carreers. A Best Place for make a arrers solution and Consultancy for education and carreer guidline for child future In today?s era of pushing the boundaries both personally and professionally, we stand tall and strong in bridging the gap between students and their dream universities. We here at Guidance for Graduates are a one-stop destination for educational consulting for best education.</p>
+              <a href="#contact" class="btn">contact us</a>
+              
+           </div>
+     
+        </div>
+     
+     </section>
+
+
+     <div class="containers">
+
+    <h1 class="heading">OUR COURSES</h1>
+
+    <div class="box-containers">
+
+        <div class="box">
+            <img src="bg-2.jpg" alt="">
+            <h3>Maths</h3>
+            <p>Math is an abbreviation of mathematics, which is a count noun in British English because there are different types of maths (geometry, algebra, calculus, etc.) and a mass noun that happens to end in an 's' in American English (like gymnastics in both dialects).</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="bg-3.png" alt="">
+            <h3>Bio</h3>
+            <p>Biology is a branch of science that deals with living organisms and their vital processes. Biology encompasses diverse fields, including botany, conservation, ecology, evolution, genetics, marine biology, medicine, microbiology, molecular biology, physiology, and zoology.</p>
+
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="bg-6.jpg" alt="">
+            <h3>Commerce</h3>
+            <p>Commerce is defined as the exchange of goods and services between two or more entities. It typically involves buying and selling things of value. Commerce can take place between businesses, between consumers, or between businesses and consumers</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        
+
+        
+
+        
+
+    </div>
+
+</div>
+
+
+
+
+     
+
+     <section class="counter">
+
+        <div class="box-container">
+     
+           <div class="box">
+              <i class="fas fa-graduation-cap"></i>
+              <div class="content">
+                 <h3>Home Tutors |Coaching Classes</h3>
+                 <p>Unique classes Academy,  Best Coaching Classes and Home Tutors Service Provider in Bhopal Karond Location and MP Nagar Location.</p>
+              </div>
+           </div>
+     
+           <div class="box">
+              <i class="fas fa-graduation-cap"></i>
+              <div class="content">
+                 <h3>Defence Classes</h3>
+                 <p>Defence ClassesA Leading Coaching Classes to provide best education Army ,Navy ,Air force All Para Milatry & MP Police in Bhopal Karond Location and MP Nagar Location.</p>
+     
+              </div>
+           </div>
+     
+           <div class="box">
+              <i class="fas fa-graduation-cap"></i>
+              <div class="content">
+                 <h3>Nursing Classes</h3>
+                 <p>Nursing A Leading Coaching Classes to provide best education for nusrsing staff for Service Provider in Bhopal Karond Location and MP Nagar Location.</p>
+              </div>
+           </div>
+     
+           
+     
+        </div>
+     
+     </section> 
+
+     <div class="containers">
+
+        <h1 class="heading">HAPPY STUDENTS & Feedbacks</h1>
+    
+        <div class="box-containers">
+    
+            <div class="box">
+                <img src="1.jpg" alt="">
+                <h3>Home Tutors |Coaching Classes</h3>
+                <p>Unique classes Academy,  Best Coaching Classes and Home Tutors Service Provider in Bhopal Karond Location and MP Nagar Location.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+    
+            <div class="box">
+                <img src="2.jpg" alt="">
+                <h3>Defence Classes</h3>
+                <p>Defence ClassesA Leading Coaching Classes to provide best education Army ,Navy ,Air force All Para Milatry & MP Police in Bhopal Karond Location and MP Nagar Location.</p>
+    
+                <a href="#" class="btn">read more</a>
+            </div>
+    
+            <div class="box">
+                <img src="3.jpg" alt="">
+                <h3>Nursing Classes</h3>
+                <p>Nursing A Leading Coaching Classes to provide best education for nusrsing staff for Service Provider in Bhopal Karond Location and MP Nagar Location.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+    
+            
+    
+            
+    
+            
+    
+        </div>
+    
+    </div>
+
+
+     
+
+     <section class="contact" id="contact">
+
+        <h1 class="heading"><span>contact</span> us</h1>
+     
+        <div class="row">
+     
+           <div class="image">
+              <img src="4.png" alt="">
+           </div>
+     
+           <form action="" method="post">
+              <span>your name</span>
+              <input type="text" required placeholder="Enter your full name" maxlength="50" name="name" class="box">
+              <span>your email</span>
+              <input type="email" required placeholder="Enter your valid email" maxlength="50" name="email" class="box">
+              <span>your number</span>
+              <input type="number" required placeholder="Enter your valid number" max="9999999999" min="0" name="number" class="box" onkeypress="if(this.value.length == 10) return false;">
+              
+               <a href="https://docs.google.com/forms/d/e/1FAIpQLScuKQ2fMG4NBeq7khlWPnpPADAtHh9kZEBGjHwHGjdQPeBiTw/viewform
+              " target="_blank" style="margin: 10px; padding: 50px; color: rgb(75, 127, 187);">Contact us</a> 
+              <!-- <input type="submit" value="send message" class="btn" name="send"> -->
+           </form>
+     
+        </div>
+     
+     </section>
+
+
+     <footer class="footer">
+
+        <section>
+     
+           <div class="fb">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-youtube"></a>
+           </div>
+     
+           <div class="credit">&copy; copyright @ 2023 by <span>Unique Tuition Classes</span> | all rights reserved!</div>
+     
+        </section>
+     
+     </footer>
+
+
+     
+     
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+	</script> 
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+	</script>
+</body>
+</html>
